@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'merri';
+    src: url('../fontes/Merriweather-Regular.ttf') format(truetype);
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'patrick';
+    src: url('../fontes/PatrickHand-Regular.ttf') format(truetype);
+    font-size: ;
+    font-weight: ;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'merri', cursive;
+    --fonte3: 'patrick', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: -10px 0px 0px 0px;
+    font-family: var(--fonte2);
+    font-size: 2em;
+}
+
+header > h1 {
+    margin: 0px;
+    font-variant: small-caps;
+    padding-top: 40px;
+}
+
+header > p {
+    margin: 0px;
+    padding-bottom: 40px;
+    font-size: 0.6em;
+}
+
+body, html {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    color: white;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color: beige;
+    color: black;
+}
+
+section.imagem {
+    background-color: beige;
+    text-shadow: 1px 1px 0px black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 350px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 0px -8px;
+    padding: 6px;
+}
+
+footer > p {
+    margin: 0px;
+}
