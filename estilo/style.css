@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'patrick';
     src: url('../fontes/PatrickHand-Regular.ttf') format(truetype);
-    font-size: ;
-    font-weight: ;
+    font-size: normal;
+    font-weight: normal;
 }
 
 :root {
